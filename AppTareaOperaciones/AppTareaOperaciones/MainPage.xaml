@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTareaOperaciones.MainPage">
+
+    <StackLayout>
+       
+        <Frame BackgroundColor="#2196F3" Padding="14" CornerRadius="0">
+            <Label Text="Operaciones Aritmeticas" HorizontalTextAlignment="Center"  TextColor="White" FontSize="36"/>
+        </Frame>
+        <ScrollView>
+            <StackLayout Padding="30,10,30,10">
+                <Label 
+                Text="Numero 1" 
+                FontSize="Title" 
+                Padding="10,10,10,10" />
+                <Entry 
+                Placeholder="0.0" 
+                Keyboard="Numeric" 
+                x:Name="num1">
+                </Entry>
+                <Label 
+                Text="Numero 2"
+                FontSize="Title" 
+                Padding="10,10,10,10"/>
+
+                <Entry 
+                Placeholder="0.0" 
+                Keyboard="Numeric"  
+                x:Name="num2">
+                </Entry>
+
+                <Button Clicked="suma" Text="Suma"></Button>
+                <Button Clicked="resta" Text="Resta"></Button>
+                <Button  Clicked="multiplicacion" Text="Multiplicacion"></Button>
+                <Button  Clicked="division" Text="Division"></Button>
+                <Label x:Name="respuesta" Text="Respuesta" FontSize="Title" Padding="10,10,10,10"/>
+            </StackLayout>
+        </ScrollView>
+        
+      
+    </StackLayout>
+
+</ContentPage>
